@@ -10,3 +10,5 @@ if !exists('g:neocomplete#omni_patterns')
     let g:neocomplete#omni_patterns = {}
 endif
 let g:neocomplete#omni_patterns.go = '\h\w*\.\?'
+let g:neocomplete#skip_auto_completion_time = ""
+let g:gocomplete#system_function = 'vimproc#system'

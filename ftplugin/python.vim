@@ -11,4 +11,11 @@ endif
 let g:neocomplete#force_omni_input_patters.python = '\h\w*\|[^. \t]\.\w*'
 
 "python_highlight
-let g:python_highlight_all = 1
+let python_highlight_all = 1
+
+"syn match pythonOperator "\(+\|=\|-\|\^\|\*\|<\|>\)"
+"syn match pythonDelimiter "\(,\|\.\|:\)"
+syn keyword pythonSpecialWord self
+"hi pythonOperator ctermfg=45
+"hi pythonDelimiter ctermfg=45
+hi pythonSpecialWord ctermfg=202
